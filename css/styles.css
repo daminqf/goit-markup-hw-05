@@ -1,0 +1,477 @@
+*
+* ::before
+* ::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, li {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display:block;
+}
+
+.box-div {
+    width: 1158px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    width:100%;
+    position:fixed;
+    z-index: 999;
+    background-color: #ffffff;
+    margin: auto;
+    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navigation .logo {
+    margin-right: 76px;
+}
+
+.link-ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    display: block;
+    font-weight: 500;
+    color: #2E2F42;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.current {
+    position: relative;
+}
+
+.link.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+}
+
+.link:focus,
+.link:hover,
+.link.current {
+    color: #404bbf;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.address-link {
+    text-decoration: none;
+    text-transform: none;
+    color: #434455;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:focus,
+.address-link:hover {
+    color: #404bbf;
+}
+
+.hero {
+    max-width: 1440px;
+    justify-self: center;
+    background-color: #2E2F42;
+    color: #FFFFFF;
+    padding: 188px 0;
+    background-image:
+        linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-title {
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+}
+
+.hero-order {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-order:focus,
+.hero-order:hover {
+    background-color: #404bbf;
+}
+
+.section2-title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #2E2F42;
+    text-align: center;
+}
+
+.feature-li {
+    width: calc((100% - 72px) / 4);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.svg-icon {
+    width:64px;
+    height:64px;
+}
+
+.feature {
+    padding: 120px 0;
+}
+
+.feature-ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
+.logo {
+    color: #4D5AE5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.accent {
+    color: #2E2F42;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.feature-svg-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:264px;
+    height:112px;
+    background-color:#F4F4FD ;
+    border:1px solid #8E8F99;
+    border-radius:4px;
+    margin-bottom:8px;
+}
+
+.feature-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455
+}
+
+.team-ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.team .title {
+    margin-bottom: 72px;
+}
+
+.social-icons-ul {
+    display: flex;
+    gap: 24px;
+    padding: 8px 16px 0px;
+    list-style: none;
+}
+
+.social-icons-li {    
+    height: 40px;
+    width: 40px;
+}
+
+.social-icons-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-svg {
+    width:16px;
+    height:16px;
+    fill:#f4f4fd;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-a:hover {
+    background-color: #FFFFFF
+}
+
+.social-icons-a:hover .social-icons-svg {
+    fill:#4D5AE5
+}
+
+.portfolio .title {
+    margin-bottom: 72px;
+}
+
+.portfolio {
+    padding: 120px 0;
+
+}
+
+.portfolio-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-li {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+.portfolio-img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-li:hover {
+    box-shadow:
+        0px 2px 1px 0px #2E2F4214,
+        0px 1px 1px 0px #2E2F4229;
+}
+
+.overlay {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    transform: translateY(100%);
+    background-color: #4D5AE5;
+    color:#F4F4FD;
+    font-weight: 400;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-text{
+    padding:40px 32px 164px;
+}
+
+.portfolio-li:hover .overlay {
+    transform: translateY(0);
+}
+
+.portfolio-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.team .team-card {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow:    
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-container {
+    padding: 32px 0;
+}
+
+.card-container .feature-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.card-container .feature-text {
+    text-align: center;
+}
+
+.foot {
+    background-color: #2E2F42;
+    color: #F4F4FD;
+    padding: 100px 0;
+}
+
+.foot-sec {
+    display:flex;
+    gap:120px;
+}
+
+.foot-social-icons-ul {
+    display: flex;
+    gap: 24px;
+    padding: 16px 16px 0px 0px;
+    list-style: none;
+}
+
+.foot-social-icons-li {
+    height: 40px;
+    width: 40px;
+}
+
+.foot-social-icons-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foot-social-icons-a:hover {
+    background-color: rgba(49, 208, 170, 1);
+}
+
+.foot-social-icons-svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;    
+}
+
+.foot-social-text {
+    font-weight: 500;
+    size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+}
+
+.foot-sec .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.foot-sec .feature-text {
+    max-width: 264px;
+}
+
+.foot .accent {
+    color: #f4f4fd;
+}
+
+.foot .feature-text {
+    color: #f4f4fd
+}
