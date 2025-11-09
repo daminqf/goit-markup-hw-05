@@ -533,7 +533,7 @@ body {
     border-color: rgba(77, 90, 229, 1);
 }
 
-input[type="text"]:focus-within + svg {
+input[type="text"]:checked + svg {
     fill: rgba(77, 90, 229, 1);
 }
 
