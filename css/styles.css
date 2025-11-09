@@ -533,7 +533,7 @@ body {
     border-color: rgba(77, 90, 229, 1);
 }
 
-.form-input:focus-within + .svg-form {
+input[class="form-input"]:checked + .svg-form {
     fill: rgba(77, 90, 229, 1);
 }
 
