@@ -467,25 +467,38 @@
           <p class="form-title">
             Leave your contacts and we will call you back
           </p>
-          <label class="form-label">
+          <label class="form-label"
+            >Name
             <input type="text" name="username" class="form-input" />
+            <svg class="svg-form">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
           </label>
-          <!--svg placeholder-->
-          <label class="form-label">
+          <label class="form-label"
+            >Phone
             <input type="tel" name="telephone" class="form-input" />
+            <svg class="svg-form">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
           </label>
           <!--svg placeholder-->
-          <label class="form-label">
+          <label class="form-label"
+            >Email
             <input type="email" name="email" class="form-input" />
+            <svg class="svg-form">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
           </label>
           <!--svg placeholder-->
           <label class="form-label">
-            <input
+            <textarea
               name="comment"
               type="text"
-              class="form-input"
+              class="form-text-area"
+              rows="3"
               placeholder="text input"
-            />
+            >
+            </textarea>
           </label>
           <label class="form-label check-text">
             <input
@@ -498,10 +511,8 @@
             <a href="#">Privacy Policy</a>
           </label>
         </form>
+        <button type="submit" class="submit-form">Send</button>
       </div>
     </div>
-    <svg class="svg-email">
-      <use href="./images/icons.svg#email"></use>
-    </svg>
   </body>
 </html>
