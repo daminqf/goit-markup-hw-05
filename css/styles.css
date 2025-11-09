@@ -533,7 +533,7 @@ body {
     border-color: rgba(77, 90, 229, 1);
 }
 
-input[type="text"]:checked + svg {
+.form-input:checked + .svg-form {
     fill: rgba(77, 90, 229, 1);
 }
 
